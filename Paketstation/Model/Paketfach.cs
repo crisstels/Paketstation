@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Paketstation
+namespace Paketstation { 
     class Paketfach
     {
         #region Properties
@@ -20,6 +20,22 @@ namespace Paketstation
         public bool Belegt { get => _belegt; set => _belegt = value; }
         internal Paket Inhalt { get => _inhalt; set => _inhalt = value; }
         #endregion
+
+        #region Worker
+
+        public void Oeffnen()
+        {
+            Status = true;
+            Console.WriteLine("Fach wird geoeffnet....");
+        }
+
+        public void Schliessen()
+        {
+            Status = false;
+            Console.WriteLine("Fach wird geschlossen...");
+        }
+        #endregion
+
 
     }
 }

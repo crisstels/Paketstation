@@ -23,5 +23,33 @@ namespace Paketstation
         public string Empfaenger { get => _empfaenger; set => _empfaenger = value; }
         public string Sender { get => _sender; set => _sender = value; }
         #endregion
+
+        #region Constructor
+        public Paket()
+        {
+            this.Paketschein = "xxxxxxxxxxx";
+            this.Gewicht = 0;
+            this.Groesse = "0 x 0";
+            this.Empfaenger = "Max Mustermann";
+            this.Sender = "Max Mustermann";
+        }
+
+        public Paket(string paketschein, int gewicht, string groesse, string empfaenger, string sender)
+        {
+            this.Paketschein = paketschein;
+            this.Gewicht = gewicht;
+            this.Groesse = groesse;
+            this.Empfaenger = empfaenger;
+            this.Sender = sender;
+ 
+        }
+        #endregion
+
+        #region Worker
+        public void Standortabfrage()
+        {
+            Console.WriteLine("Geben Sie Ihren Standort ein");
+        }
+        #endregion
     }
 }

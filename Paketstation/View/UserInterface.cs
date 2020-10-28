@@ -15,5 +15,12 @@ namespace Paketstation
         #region Accessor/Modifier
         public string Text { get => _text; set => _text = value; }
         #endregion
+
+        #region Worker
+        public void Datenannehmen()
+        {
+
+        }
+        #endregion
     }
 }

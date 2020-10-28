@@ -18,8 +18,28 @@ namespace Paketstation
         #region Accessors/Modifiers
         public int ID1 { get => ID; set => ID = value; }
         public string Standort { get => _standort; set => _standort = value; }
-        internal UserInterface Terminal { get => _terminal; set => _terminal = value; }
-        internal Paketfach[] Faecher { get => _faecher; set => _faecher = value; }
+        public UserInterface Terminal { get => _terminal; set => _terminal = value; }
+        public Paketfach[] Faecher { get => _faecher; set => _faecher = value; }
+        #endregion
+
+        #region Worker
+        public void Paketannehmen(Paket paket)
+        {
+            Console.WriteLine("Ihr Paket wurde angenenommen");
+        }
+
+        public void PaketeListen()
+        {
+            Console.WriteLine("Verfuegbare Pakete");
+        }
+        private void Statusabfrage()
+        {
+            Console.WriteLine("Status des Pakets");
+        }
+
+        public Paket Paketabgeben()
+        {
+        }
         #endregion
     }
 }

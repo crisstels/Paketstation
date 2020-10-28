@@ -21,5 +21,17 @@ namespace Paketstation
         public string Adresse { get => _adresse; set => _adresse = value; }
         public Paket Paket { get => _paket; set => _paket = value; }
         #endregion
+
+        #region Worker
+        public Paket Paketeinliefern()
+        {
+            return this.Paket;
+        }
+
+        public void Paketabholen(Paket paket)
+        {
+            Console.WriteLine("Sie haben Ihr Paket erfolgreich abgeholt.");
+        }
+        #endregion
     }
 }
