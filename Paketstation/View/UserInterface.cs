@@ -8,5 +8,12 @@ namespace Paketstation
 {
     class UserInterface
     {
+        #region Prpoerties
+        private String _text;
+        #endregion
+
+        #region Accessor/Modifier
+        public string Text { get => _text; set => _text = value; }
+        #endregion
     }
 }
