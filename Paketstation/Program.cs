@@ -10,6 +10,7 @@ namespace Paketstation
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("hello");
         }
     }
 }
