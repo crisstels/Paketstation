@@ -25,15 +25,21 @@ namespace Paketstation {
 
         public void Oeffnen()
         {
-            Status = true;
+            this.Status = true;
             Console.WriteLine("Fach wird geoeffnet....");
         }
 
         public void Schliessen()
         {
-            Status = false;
+            this.Status = false;
             Console.WriteLine("Fach wird geschlossen...");
         }
+
+        public bool GetBelegt()
+        {
+            return this.Belegt;
+        }
+}
         #endregion
 
 
