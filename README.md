@@ -1,5 +1,4 @@
 # Paketstation
-Another project at school 
 Modelliert eine Paketstation.
 1. Der Kunde kann ein Paket einliefern.
 2. Der Kunde kann ein Paket abholen.
